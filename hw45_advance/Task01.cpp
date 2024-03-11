@@ -55,8 +55,10 @@ string vectToString(int* vect, int size) {
 int main() {
 	srand(time(0));
 	int size1, size2, min1, max1, min2, max2;
-	cout << "Input size of first and size of second array: ";
-	cin >> size1 >> size2;
+	do {
+		cout << "Input size of first and size of second array: ";
+		cin >> size1 >> size2;
+	} while (size1 <= 0 || size2 <= 0);
 	cout << "Input min and max of arrays: ";
 	cin >> min1 >> max1 >> min2 >> max2;
 
